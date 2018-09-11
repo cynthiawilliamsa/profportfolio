@@ -100,12 +100,12 @@ class Resume extends Component {
                 jobName="FitForce, LLC"
                 jobDescription="Owner and Certified Personal Trainer."                
                 />
-                <List>
+                {/* <List>
                     <ListItem>Provided Personal Training to over 20 clients.</ListItem>
                     <ListItem>Managed marketing, operations, accounting and other day-to-day tasks of running a business.</ListItem>
                     <ListItem>Provided Personal Training to over 20 clients.</ListItem>
                     <ListItem>Provided Personal Training to over 20 clients.</ListItem>
-                </List>
+                </List> */}
                 <Experience
                 startYear={2011}
                 endYear={2015}
