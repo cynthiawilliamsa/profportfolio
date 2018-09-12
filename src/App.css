@@ -1,6 +1,7 @@
-
-.header-color {
+/*appbar at top */
+.header-color, .category-tabs {
   background: #F3904F; 
+  text-justify: right;
 }
 
 .landing-grid, .projects-grid, .nav-color, .contact-body { 
@@ -16,27 +17,25 @@
 }
 
 .avatar-img {
-  height: 250px;
-  padding-top: 5em;
+  height: 200px;
+  padding-top: 3em;
+  border-radius: 10px;
 }
 
 .banner-text {
-  background: #C33764;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  opacity: .8;
+  opacity: .9;
   width: 75%;
   margin: auto;
   border-radius: 10px; 
 }
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 55px;
   font-weight: bold;
   color: white;
 }
 .banner-text hr {
   border-top: 5px dotted white;
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 .banner-text p {
@@ -61,6 +60,9 @@
   justify-content: space-between;
   padding-top: 30px;
 }
+.category-tabs Tab {
+  color: white;
+}
 .contact-body {
   margin: auto; 
   position: fixed;
@@ -74,13 +76,14 @@
   text-align: center;
   justify-content: center;
   width: 80%;
-  height: 700px; 
-  color: black;  
+  height: 650px; 
+  color: white;  
  margin-bottom: 20px;
 }
 
 .contact-grid h2 {
   font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
 }
 
 .contact-grid p {
@@ -89,17 +92,34 @@
 }
 
 .contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
+  border-top: 5px dotted white;
+  width: 70%;
   margin: auto;
 }
 .contact-list i { 
-  font-size: 60px;
-  padding-right: 5rem;
+  font-size: 50px;
+  padding-right: 1em;
+  color: white;
  }
 
  /*Resume Page*/
  .resume-right-col {
    background: #27221F;
-   color:white;
+   color:white;  
+ }
+ .resume-right-col h3 {
+   margin-left: 5px;
+ }
+ .resume-right-col p {
+  font-size: 16px;
+}
+
+ .resume-left-col p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
+
+ .resume-left-col h5 {
+   margin-bottom: 5px;
+   font-size: 18px;   
  }

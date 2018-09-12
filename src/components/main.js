@@ -6,7 +6,7 @@ import Contact from './contact';
 import Resume from './resume';
 import Projects from './projects'
 
-
+//route links for project
 const Main = () => (
     <Switch>
         <Route exact path="/" component={LandingPage} />

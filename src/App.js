@@ -3,14 +3,14 @@ import './App.css';
 import {Layout, Header, Navigation, Textfield, Drawer, Content} from 'react-mdl';
 import Main from './components/main';
 import { Link } from 'react-router-dom'
-
+//parent app for project
 class App extends Component {
   render() {
     return (
       <div className="App">
           <div className="demo-big-content">
             <Layout>  
-              <Header className="header-color" style={{backgroundColor: "#F3904F"}} title="Professional Portfolio" scroll>
+              <Header className="header-color" style={{backgroundColor: "#F3904F", fontFamily: 'Oxygen'}} scroll>
                   <Navigation>
                     <Link to="/">Home</Link>
                       <Link to="/resume">Resume</Link>

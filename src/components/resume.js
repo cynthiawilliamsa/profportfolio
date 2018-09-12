@@ -5,11 +5,14 @@ import Experience from './Experience';
 import Skills from './Skills';
 
 class Resume extends Component {
+  state = {
+    jobTasks: 0
+  }
   render() {
     return (
       <div>
-        <Grid>
-          <Cell col={3}>
+        <Grid className="resume-left-col">
+          <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
                 src='https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png'
@@ -17,10 +20,19 @@ class Resume extends Component {
                 style={{height: '200px'}}
                 />
               </div>
-              <h2 style={{paddingTop: '2em'}}>Cynthia Williams</h2>
-              <h4 style={{color: 'gray'}}>Software Engineer</h4>
-              <hr style={{borderTop: "3px solid #833fb2", width: '50%'}}/>
-              <h2>Technical Skills</h2>
+              <h2 style={{paddingTop: '1em'}}>Cynthia Williams</h2>
+              <h5 style={{color: 'gray'}}>Software Engineer</h5>
+              <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
+              <h5>Location</h5>
+              <p>Austin, TX</p>
+              <h5>Phone</h5>
+              <p>(614) 805-2016</p>
+              <h5>Email</h5>
+              <p>cynthiawilliamsa@gmail.com</p>
+              <h5>My Website</h5>
+              <p>mywebsite.com</p>
+              <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
+              <h5>Technical Skills</h5>
                 <Skills
                   skill="JavaScript"
                   progress={75}
@@ -45,8 +57,8 @@ class Resume extends Component {
                   skill="NodeJS"
                   progress={20}
                 />
-              <hr style={{borderTop: "3px solid #833fb2", width: '50%'}}/>
-              <h2>Personal Skills</h2>
+              <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
+              <h5>Personal Skills</h5>
                 <Skills
                   skill="Problem Solving"
                   progress={100}
@@ -67,19 +79,11 @@ class Resume extends Component {
                   skill="Communication"
                   progress={90}
                 />
-              <hr style={{borderTop: "3px solid #833fb2", width: '50%'}}/>
-              <h5>Address</h5>
-              <p>1 Hacker Way Menlo Park, 94025</p>
-              <h5>Phone</h5>
-              <p>(614) 805-2016</p>
-              <h5>Email</h5>
-              <p>cynthiawilliamsa@gmail.com</p>
-              <h5>My Website</h5>
-              <p>mywebsite.com</p>
-              <hr style={{borderTop: "3px solid #833fb2", width: '50%'}}/>
+              <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
+              
           </Cell>
-          <Cell className='resume-right-col' col={9}>
-            <h2>Education</h2>
+          <Cell className='resume-right-col' col={8}>
+            <h3>Education</h3>
               <Education
                 startYear={2018}
                 endYear={2018}
@@ -92,20 +96,14 @@ class Resume extends Component {
                 schoolName="Pierce College"
                 schoolDescription="Bachelor of Science in Business Administration/Management, Cum Laude 3.8 GPA."
               />
-              <hr style={{borderTop: '3px solid #e22947'}}/>
-              <h2>Experience</h2>
+              <hr style={{borderTop: '3px solid #F3904F', width: '75%'}}/>
+              <h3>Experience</h3>
               <Experience
                 startYear={2016}
                 endYear='Present'
                 jobName="FitForce, LLC"
                 jobDescription="Owner and Certified Personal Trainer."                
-                />
-                {/* <List>
-                    <ListItem>Provided Personal Training to over 20 clients.</ListItem>
-                    <ListItem>Managed marketing, operations, accounting and other day-to-day tasks of running a business.</ListItem>
-                    <ListItem>Provided Personal Training to over 20 clients.</ListItem>
-                    <ListItem>Provided Personal Training to over 20 clients.</ListItem>
-                </List> */}
+                />                
                 <Experience
                 startYear={2011}
                 endYear={2015}
@@ -118,7 +116,7 @@ class Resume extends Component {
                 jobName="HR Specialist/Legal Assistant"
                 jobDescription="Need input from resume"
                 />
-                 <hr style={{borderTop: '3px solid #e22947'}}/>
+              
           
           </Cell>
         </Grid>
