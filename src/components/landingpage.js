@@ -15,7 +15,8 @@ class Landing extends Component {
                     style={{opacity: '.7'}}
                 />
                 <div className="banner-text">
-                    <h1>Web Developer</h1>
+                    <h1>Cynthia Williams</h1>
+                    <h3>Software Engineer</h3>
                     <hr/>
                     <p style={{letterSpacing: "3px"}}>Javascript | React </p>
                     <div className="social-links">

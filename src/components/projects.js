@@ -19,7 +19,7 @@ class Projects extends Component {
         </CardText>
         <CardActions border>
           <Button 
-            href="https://cynthiawilliamsa.github.io/todolist/."
+            href="https://github.com/cynthiawilliamsa/todolist"
             colored>GitHub</Button>     
         </CardActions> 
         <CardMenu style={{color: '#eee'}}> 
@@ -67,7 +67,7 @@ class Projects extends Component {
 }
   render() {
     return (
-      <div className="category-tabs" style={{color:'white'}}>
+      <div className="category-tabs">
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
           <Tab>React</Tab>
           <Tab>Other</Tab>

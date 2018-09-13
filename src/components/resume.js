@@ -11,28 +11,35 @@ class Resume extends Component {
   render() {
     return (
       <div>
-        <Grid className="resume-left-col">
-          <Cell col={4}>
-            <div style={{textAlign: 'center'}}>
-              <img
-                src='https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png'
-                alt='avatar'
-                style={{height: '200px'}}
-                />
-              </div>
-              <h2 style={{paddingTop: '1em'}}>Cynthia Williams</h2>
-              <h5 style={{color: 'gray'}}>Software Engineer</h5>
-              <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
-              <h5>Location</h5>
-              <p>Austin, TX</p>
-              <h5>Phone</h5>
-              <p>(614) 805-2016</p>
-              <h5>Email</h5>
+        <Grid>
+          <Cell className="resume-name-col" col={6} style={{height: '150px'}}>
+          <h2>Cynthia Williams</h2>
+          <h5 style={{color: 'gray', marginLeft: '2px'}}>Software Engineer</h5>
+          
+          </Cell>
+          <Cell className="resume-address-col" col={6} style={{height: '150px',}}>                          
+              <p style={{marginTop: '25px'}}>(614) 805-2016</p>              
               <p>cynthiawilliamsa@gmail.com</p>
-              <h5>My Website</h5>
-              <p>mywebsite.com</p>
+              <p>https://github.comcynthiawilliamsa</p>
+              <p>Austin, TX</p> 
+              </Cell>
+          <Cell className="resume-left-col"col={4}>           
+              <h3>Education</h3>
+              <hr style={{borderTop: '3px solid #F3904F', width: '75%'}}/>
+              <Education
+                startYear={2018}
+                endYear={2018}
+                schoolName="Austin Coding Academy"
+                schoolDescription="Covered HTML/CSS, responsive web design, Bootstrap, JavaScript, data structures, React, Fetch API and Material UI."
+              />
+              <Education
+                startYear={2006}
+                endYear={2008}
+                schoolName="Pierce College"
+                schoolDescription="Bachelor of Science in Business Administration/Management, Cum Laude 3.8 GPA."
+              />              
+              <h3>Technical Skills</h3>
               <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
-              <h5>Technical Skills</h5>
                 <Skills
                   skill="JavaScript"
                   progress={75}
@@ -58,7 +65,7 @@ class Resume extends Component {
                   progress={20}
                 />
               <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
-              <h5>Personal Skills</h5>
+              <h3>Personal Skills</h3>
                 <Skills
                   skill="Problem Solving"
                   progress={100}
@@ -82,21 +89,8 @@ class Resume extends Component {
               <hr style={{borderTop: "3px solid #F3904F", width: '75%'}}/>
               
           </Cell>
-          <Cell className='resume-right-col' col={8}>
-            <h3>Education</h3>
-              <Education
-                startYear={2018}
-                endYear={2018}
-                schoolName="Austin Coding Academy"
-                schoolDescription="30 week full stack Javascript bootcamp."
-              />
-              <Education
-                startYear={2006}
-                endYear={2008}
-                schoolName="Pierce College"
-                schoolDescription="Bachelor of Science in Business Administration/Management, Cum Laude 3.8 GPA."
-              />
-              <hr style={{borderTop: '3px solid #F3904F', width: '75%'}}/>
+          <Cell className='resume-right-col' col={8}>            
+              
               <h3>Experience</h3>
               <Experience
                 startYear={2016}
