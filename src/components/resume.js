@@ -6,7 +6,41 @@ import Skills from './Skills';
 
 class Resume extends Component {
   state = {
-    jobTasks: 0
+    tutor: ["Provide group and individual tutoring to current ACA students.",
+    "Assist students with learning HTML/CSS, JavaScript and React fundamentals."],
+    owner: ["Build website using JavaScript and React.", "Working on Fitness Stats tracker app which is a full stack app built using React, Express, MongoDB and Mongoose.",
+    "Provide personal training to clients.",
+    "Manage marketing, operations, accoutning and other day-to-day tasks of running a business."
+    ],
+    coordinator: ["Reduced compliance monitoring costs by 30% within a year in the position by bringing contracted services in-house.",
+       "Developed 5-year plan to visit over 3000 holding facilities statewide.",
+        "Served as liaison for 1000's of juvenile justice stakeholders in regard to maintaining compliance with the Juvenile Justice Delinquency Prevention Act (JJDP).",
+     "Effectively authored and implemented processes that provided foundational framework for compliance monitoring." ],
+     hr:  ["Decreased recruitement expenses by 30% within a year of being in the positoin by implementing Recruitment Process Outsourcing (RPO).",
+     "Managed relocation process for 25-30 executive level hires.",
+     "Oversaw vendor contracts for relocation drug testing and multiple job boards.",
+     "Managed timeline on multiple time-senseitive projects which improved profitability through automation."
+     ]
+  }
+  tutorTasks() {
+    return this.state.tutor.map((item, index) => {
+      return <li>{item}</li>;
+    });
+  }
+  ownerTasks() {
+    return this.state.owner.map((item, index)=>{
+      return <li>{item}</li>
+    });
+  }
+  coordinatorTasks() {
+    return this.state.coordinator.map((item, index)=> {
+      return <li>{item}</li>
+    });
+  }
+  hrTasks() {
+    return this.state.hr.map((item,index) => {
+      return <li>{item}</li>
+    });
   }
   render() {
     return (
@@ -92,25 +126,34 @@ class Resume extends Component {
           <Cell className='resume-right-col' col={8}>            
               
               <h3>Experience</h3>
+              <Experience 
+                startYear={2018}
+                endYear="Present"
+                jobName="Austin Coding Academy"
+                jobDescription="Tutor"
+                />
+                <div>{this.tutorTasks()}</div>
               <Experience
                 startYear={2016}
                 endYear='Present'
                 jobName="FitForce, LLC"
                 jobDescription="Owner and Certified Personal Trainer."                
-                />                
+                />
+                <div>{this.ownerTasks()}</div>                
                 <Experience
                 startYear={2011}
                 endYear={2015}
-                jobName="Program Specialist III"
-                jobDescription="Need input from resume"
+                jobName="Office of the Governor"
+                jobDescription="Program Specialist III"
                 />
+                <div>{this.coordinatorTasks()}</div>
                 <Experience
                 startYear={2006}
                 endYear={2008}
-                jobName="HR Specialist/Legal Assistant"
-                jobDescription="Need input from resume"
+                jobName="American Signature Furniture/Schottensteins Stores Corp."
+                jobDescription="HR Specialist"
                 />
-              
+                <div>{this.hrTasks()}</div>            
           
           </Cell>
         </Grid>
