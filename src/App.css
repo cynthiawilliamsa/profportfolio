@@ -1,28 +1,151 @@
-.App {
+/*appbar at top */
+.header-color, .category-tabs {
+  background: #F3904F; 
+  text-justify: right;
+}
+
+.landing-grid, .projects-grid, .nav-color, .contact-body, .resume-body { 
+  background: #F3904F; 
+  background: -webkit-linear-gradient(to top, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   text-align: center;
+  top: 5;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
+.avatar-img {
   height: 150px;
-  padding: 20px;
+  padding-top: 2em;
+  border-radius: 10px;
+}
+
+.banner-text {
+  opacity: .9;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px; 
+}
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: bold;
   color: white;
+  margin-top: 5px;
+  margin-bottom: 0
+}
+.banner-text h3 {
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 60%;
+  margin: auto;
+}
+.banner-text p {
+  color: white;
+  font-size: 16px;
+  padding: 1em;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.social-links i {
+  color: white;
+  font-size: 3em;
+  padding: 8px;
+}
+.react-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+.contact-body {
+  margin: auto; 
+  /* position: fixed; */
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  padding-top: 3em;
 }
 
-.App-title {
-  font-size: 1.5em;
+.contact-grid { 
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  height: 650px; 
+  color: white;  
+ margin-bottom: 20px;
 }
 
-.App-intro {
-  font-size: large;
+.contact-grid h2 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.contact-grid p {
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
 }
+
+.contact-grid hr {
+  border-top: 5px dotted white;
+  width: 70%;
+  margin: auto;
+}
+.contact-list i { 
+  font-size: 50px;
+  padding-right: 1em;
+  color: white;
+ }
+
+ /*Resume Page*/
+ .resume-name-col h2 {
+   text-align: left;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+ }
+ .resume-name-col h5 {
+   text-align: left;
+   font-size: 18px;
+   margin-top: 10px;
+ }
+ .resume-right-col {
+   text-align: left;
+   color:black;  
+ }
+ .resume-right-col h5 {
+   text-align: left;
+   font-size: 18px;
+ }
+ .resume-right-col p {  
+  font-size: 16px;
+}
+.resume-address-col {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.resume-address-col p {   
+    margin-bottom: 0;
+    margin-left: 200px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 20px;
+ }
+ .resume-left-col {
+   text-align: left;
+ }
+ .resume-left-col h5 {
+   margin-bottom: 5px;
+   font-size: 22px; 
+   font-weight:bold;  
+ }
