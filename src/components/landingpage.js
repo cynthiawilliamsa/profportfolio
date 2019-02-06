@@ -18,7 +18,7 @@ class Landing extends Component {
                     <h1>Cynthia Williams</h1>
                     <h3>Software Engineer</h3>
                     <hr/>
-                    <p style={{letterSpacing: "3px"}}>Javascript | React </p>
+                    <p style={{letterSpacing: "3px"}}>Javascript | React | Node | Express | MongoDB</p>
                     <div className="social-links">
                         {/* Linked In*/}
                         <a href="https://linkedin.com/in/cynthiawilliamsa" target="_blank" rel="noopener noreferrer">

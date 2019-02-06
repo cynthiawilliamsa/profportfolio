@@ -4,12 +4,11 @@
   text-justify: right;
 }
 
-.landing-grid, .projects-grid, .nav-color, .contact-body { 
+.landing-grid, .projects-grid, .nav-color, .contact-body, .resume-body { 
   background: #F3904F; 
   background: -webkit-linear-gradient(to top, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   text-align: center;
-  position: fixed;
   top: 5;
   left: 0;
   width: 100%;
@@ -17,8 +16,8 @@
 }
 
 .avatar-img {
-  height: 200px;
-  padding-top: 3em;
+  height: 150px;
+  padding-top: 2em;
   border-radius: 10px;
 }
 
@@ -29,9 +28,16 @@
   border-radius: 10px; 
 }
 .banner-text h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
+  margin-top: 5px;
+  margin-bottom: 0
+}
+.banner-text h3 {
+  font-size: 22px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 .banner-text hr {
   border-top: 5px dotted white;
@@ -40,7 +46,7 @@
 }
 .banner-text p {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   padding: 1em;
 }
 .social-links {
@@ -51,7 +57,7 @@
 }
 .social-links i {
   color: white;
-  font-size: 5em;
+  font-size: 3em;
   padding: 8px;
 }
 .react-cards {
@@ -62,7 +68,7 @@
 }
 .contact-body {
   margin: auto; 
-  position: fixed;
+  /* position: fixed; */
   height: 100%;
   width: 100%;
   justify-content: center;
@@ -101,19 +107,30 @@
 
  /*Resume Page*/
  .resume-name-col h2 {
-    font-size: 50px;
+   text-align: left;
+    font-size: 35px;
     font-weight: bold;
+    margin: 0;
+ }
+ .resume-name-col h5 {
+   text-align: left;
+   font-size: 18px;
+   margin-top: 10px;
  }
  .resume-right-col {
+   text-align: left;
    color:black;  
  }
  .resume-right-col h5 {
-   font-size: 22px;
+   text-align: left;
+   font-size: 18px;
  }
- .resume-right-col p {
+ .resume-right-col p {  
   font-size: 16px;
 }
 .resume-address-col {
+  font-size: 16px;
+  text-align: left;
   margin-top: 15px;
 }
 
@@ -124,7 +141,9 @@
     font-weight: bold;
     font-size: 20px;
  }
-
+ .resume-left-col {
+   text-align: left;
+ }
  .resume-left-col h5 {
    margin-bottom: 5px;
    font-size: 22px; 

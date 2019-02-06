@@ -44,14 +44,14 @@ class Resume extends Component {
   }
   render() {
     return (
-      <div>
-        <Grid>
+      <div className="resume-body" >
+        <Grid style={{width: "90%"}}>
           <Cell className="resume-name-col" col={6} style={{height: '150px'}}>
           <h2>Cynthia Williams</h2>
-          <h5 style={{color: 'gray', marginLeft: '2px'}}>Software Engineer</h5>
+          <h5 style={{color: 'white'}}>Software Engineer</h5>
           
           </Cell>
-          <Cell className="resume-address-col" col={6} style={{height: '150px',}}>                          
+          <Cell className="resume-address-col" col={6} style={{height: '150px'}}>                          
               <p style={{marginTop: '25px'}}>(614) 805-2016</p>              
               <p>cynthiawilliamsa@gmail.com</p>
               <p>https://github.comcynthiawilliamsa</p>
@@ -59,7 +59,7 @@ class Resume extends Component {
               </Cell>
           <Cell className="resume-left-col"col={4}>           
               <h3>Education</h3>
-              <hr style={{borderTop: '3px solid #F3904F', width: '75%'}}/>
+              <hr style={{borderTop: '3px solid white', width: '75%'}}/>
               <Education
                 startYear={2018}
                 endYear={2018}
