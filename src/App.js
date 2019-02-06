@@ -4,7 +4,6 @@ import {
   Layout,
   Header,
   Navigation,
-  Textfield,
   Drawer,
   Content
 } from "react-mdl";
@@ -16,7 +15,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="demo-big-content">
-          <Layout fixedHeader>
+          <Layout>
             <Header
               className="header-color"
               style={{ backgroundColor: "gray", fontFamily: "Oxygen" }}
