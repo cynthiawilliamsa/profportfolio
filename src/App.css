@@ -1,13 +1,28 @@
 /*appbar at top */
-.header-color, .category-tabs {
-  background: #F3904F; 
-  text-justify: right;
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
 }
 
-.landing-grid, .projects-grid, .nav-color, .contact-body, .resume-body { 
+body {
+  background-size: 100% 100%;
   background: #F3904F; 
   background: -webkit-linear-gradient(to top, #3B4371, #F3904F);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #3B4371, #F3904F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+
+.landing-grid, .projects-grid, .nav-color, .contact-body, .resume-body {   
   text-align: center;
   top: 5;
   left: 0;
@@ -16,9 +31,9 @@
 }
 
 .avatar-img {
-  height: 150px;
-  padding-top: 2em;
-  border-radius: 10px;
+  height: 175px;
+  padding-top: 3em;
+
 }
 
 .banner-text {
@@ -31,23 +46,23 @@
   font-size: 40px;
   font-weight: bold;
   color: white;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 0
 }
 .banner-text h3 {
   font-size: 22px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .banner-text hr {
   border-top: 5px dotted white;
   width: 60%;
   margin: auto;
+  padding: 20px;
 }
 .banner-text p {
   color: white;
   font-size: 16px;
-  padding: 1em;
+  padding: 2em;
 }
 .social-links {
   display: flex;
@@ -57,8 +72,8 @@
 }
 .social-links i {
   color: white;
-  font-size: 3em;
-  padding: 8px;
+  font-size: 4em;
+  padding-top: 20px;
 }
 .react-cards {
   display: flex;
@@ -105,47 +120,9 @@
   color: white;
  }
 
- /*Resume Page*/
- .resume-name-col h2 {
-   text-align: left;
-    font-size: 35px;
-    font-weight: bold;
-    margin: 0;
+ /*See My Work*/
+ .category-tabs>Tab {
+   font-weight: bold;
+   color: "white"
  }
- .resume-name-col h5 {
-   text-align: left;
-   font-size: 18px;
-   margin-top: 10px;
- }
- .resume-right-col {
-   text-align: left;
-   color:black;  
- }
- .resume-right-col h5 {
-   text-align: left;
-   font-size: 18px;
- }
- .resume-right-col p {  
-  font-size: 16px;
-}
-.resume-address-col {
-  font-size: 16px;
-  text-align: left;
-  margin-top: 15px;
-}
 
-.resume-address-col p {   
-    margin-bottom: 0;
-    margin-left: 200px;
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-size: 20px;
- }
- .resume-left-col {
-   text-align: left;
- }
- .resume-left-col h5 {
-   margin-bottom: 5px;
-   font-size: 22px; 
-   font-weight:bold;  
- }

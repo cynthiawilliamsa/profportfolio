@@ -22,7 +22,7 @@ class Contact extends Component {
             <div className="contact-list">
               <List>
                 <ListItem>
-                  <ListItemContent style={{fontSize: '25px', fontFamily:'Anton', color: 'white' }}>
+                  <ListItemContent style={{fontSize: '25px', fontFamily:'Oxygen', color: 'white' }}>
                     <i className="fa fa-phone-square" aria-hidden='true'/>
                     (614) 805-2016</ListItemContent>
                 </ListItem>
@@ -30,16 +30,10 @@ class Contact extends Component {
                   <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton', color: 'white'}}>
                   <i className="fa fa-envelope" aria-hidden='true'/> {/*aria-hidden makes controls icon visibility on screen readers*/}
                   cynthiawilliamsa@gmail.com</ListItemContent>
-                </ListItem>
-                <ListItem>
-                  <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton', color: 'white'}}>
-                  <i className="fa fa-skype" aria-hidden='true'/>
-                  My Skype ID</ListItemContent>
-                </ListItem>
+                </ListItem>               
               </List>
             </div>
           </Cell>
-
         </Grid>
       </div>
     )

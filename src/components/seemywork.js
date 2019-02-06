@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-
+import fitforcellc from '../../src/fitforcellc.png';
+import fitnessstats from '../../src/fitnessstats.jpg';
 class Projects extends Component { 
     
     state = { 
@@ -9,8 +10,8 @@ class Projects extends Component {
   
   toggleCategory() {
     if(this.state.activeTab === 0){
-    return ( //create child component to house card in refactor
-      <div className = "react-cards">
+    return (
+      <div className = "react-cards" style={{opacity:"1"}}>
       {/* Projects */}     
       <Card shadow={5} style={{minWidth: '450', margin:'auto'}}>
         <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center /cover'}}>ToDoList</CardTitle>
@@ -29,18 +30,18 @@ class Projects extends Component {
       {/* Project 2*/}   
       <Card shadow={5} style={{minWidth: '450', margin:'auto'}}>
         <CardTitle 
-          style={{color: '#fff', height: '176px', background: 'url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center /cover'}}>
+          
+          style={{color: '#fff', height: '176px', background: 'url(../src/fitforcellc.png) center /cover'}}>
           FitForce Website</CardTitle>
         <CardText>
-          React App for Fitness Business.
+          Business website created with HTML, CSS and Materialize CSS library.
         </CardText>
         <CardActions border>
           <Button 
-            href=" https://cynthiawilliamsa.github.io/fitforce/"         
-            colored>GitHub</Button>     
+            href=" https://cynthiawilliamsa.github.io/fitforcellc/"         
+            colored>Check it Out</Button>     
         </CardActions> 
         <CardMenu style={{color: '#eee'}}> 
-          <IconButton name="share"/>
         </CardMenu>    
       </Card> 
      {/* Project 3*/}      
@@ -64,23 +65,23 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-      <div>
+      <div className="react-cards">
         {/* Project 1 */}
         <Card shadow={5} style={{minWidth: '450', margin:'auto'}}>
-          <CardTitle 
+          <CardTitle
+            src={fitnessstats}
             style={{color: '#fff', height: '176px', background: 'url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center /cover'}}>
             Fitness Stats App
           </CardTitle>
             <CardText>
-              Single page React App using Express framework for server setup. 
+              React App hosted on Heroku. Express, Node.js, MongoDB(MLab), Passport and Material UI.
             </CardText>
             <CardActions border>
               <Button 
-                href="https://github.com/cynthiawilliamsa/advanced-express-practice"
-                colored>GitHub</Button>     
+                href="https://ancient-brook-98081.herokuapp.com/"
+                colored>Check It Out</Button>     
             </CardActions> 
-            <CardMenu style={{color: '#eee'}}> 
-              <IconButton name="share"/>
+            <CardMenu style={{color: '#eee'}}>
             </CardMenu>    
         </Card>
         <Card shadow={5} style={{minWidth: '450', margin:'auto'}}>
@@ -111,10 +112,9 @@ class Projects extends Component {
   render() {
     return (
       <div className="category-tabs">
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})} ripple>
-          <Tab>Front-End</Tab>
-          <Tab>Full Stack</Tab>
-          {/* <Tab>MongoDB</Tab> */}
+        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({activeTab: tabId})}>
+          <Tab style={{color: "white", fontWeight: "bold"}}>Front End</Tab>
+          <Tab style={{color: "white", fontWeight: "bold"}}>Full Stack</Tab>
         </Tabs>
         <section className="projects-grid">
           <Grid className="projects-grid">
