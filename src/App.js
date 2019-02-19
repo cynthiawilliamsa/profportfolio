@@ -18,7 +18,7 @@ class App extends Component {
           <Layout>
             <Header
               className="header-color"
-              style={{ backgroundColor: "gray", fontFamily: "Oxygen" }}
+              style={{ backgroundColor: "#3B4371", fontFamily: "Oxygen" }}
               scroll
             >
               <Navigation>

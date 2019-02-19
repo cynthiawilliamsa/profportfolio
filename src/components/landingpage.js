@@ -15,7 +15,7 @@ class Landing extends Component {
             />
             <div className="banner-text">
               <h1>Cynthia Williams</h1>
-              <h3>Software Engineer</h3>
+              <h3>Full Stack Software Engineer</h3>
               <hr />
 
               <div className="social-links">
