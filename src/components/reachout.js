@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl';
-import Cyn from '../../src/Cyn.jpg';
+import React, { Component } from "react";
+import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import Cyn from "../../src/Cyn.jpg";
 
 class Contact extends Component {
   render() {
@@ -9,34 +9,45 @@ class Contact extends Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Cynthia Williams</h2>
-            <img
-              src={Cyn}
-              alt="avatar"
-              style={{height: '250px'}}
-            />
-            <p style={{width: '75%', margin: 'auto', paddingTop: '2em'}}></p>
+            <img src={Cyn} alt="avatar" style={{ height: "250px" }} />
+            <p style={{ width: "75%", margin: "auto", paddingTop: "2em" }} />
           </Cell>
           <Cell col={6}>
             <h2>Contact Me</h2>
-            <hr/>
+            <hr />
             <div className="contact-list">
               <List>
                 <ListItem>
-                  <ListItemContent style={{fontSize: '25px', fontFamily:'Oxygen', color: 'white' }}>
-                    <i className="fa fa-phone-square" aria-hidden='true'/>
-                    (614) 805-2016</ListItemContent>
+                  <ListItemContent className = "contact-list-item"
+                    style={{
+                      fontFamily: "Oxygen",
+                      color: "white",
+                      marginLeft: "25px"
+                    }}
+                  >
+                    <i className="fa fa-phone-square" aria-hidden="true" />
+                    (614) 805-2016
+                  </ListItemContent>
                 </ListItem>
                 <ListItem>
-                  <ListItemContent style={{fontSize: '25px', fontFamily: 'Anton', color: 'white'}}>
-                  <i className="fa fa-envelope" aria-hidden='true'/> {/*aria-hidden makes controls icon visibility on screen readers*/}
-                  cynthiawilliamsa@gmail.com</ListItemContent>
-                </ListItem>               
+                  <ListItemContent className = "contact-list-item"
+                    style={{
+                      fontFamily: "Oxygen",
+                      color: "white",
+                      marginLeft: "25px"
+                    }}
+                  >
+                    <i className="fa fa-envelope" aria-hidden="true" />{" "}
+                    {/*aria-hidden makes controls icon visibility on screen readers*/}
+                    cynthiawilliamsa@gmail.com
+                  </ListItemContent>
+                </ListItem>
               </List>
             </div>
           </Cell>
         </Grid>
       </div>
-    )
+    );
   }
 }
 export default Contact;

@@ -10,10 +10,8 @@ import {
   CardActions,
   Button,
   CardMenu,
-  IconButton
 } from "react-mdl";
-import fitforcellc from "../../src/fitforcellc.png";
-import fitnessstats from "../../src/fitnessstats.jpg";
+
 class Projects extends Component {
   state = {
     activeTab: 0
@@ -22,15 +20,15 @@ class Projects extends Component {
   toggleCategory() {
     if (this.state.activeTab === 0) {
       return (
-        <div className="react-cards" style={{ opacity: "1" }}>
+        <div className="react-cards" >
           {/* Projects */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
             <CardTitle
               style={{
                 color: "#fff",
                 height: "176px",
                 background:
-                  "url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center /cover"
+                  "url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center /cover"
               }}
             >
               ToDoList
@@ -44,25 +42,22 @@ class Projects extends Component {
                 GitHub
               </Button>
             </CardActions>
-            <CardMenu style={{ color: "#eee" }}>
-              <IconButton name="share" />
+            <CardMenu style={{ color: "#eee" }}>              
             </CardMenu>
           </Card>
           {/* Project 2*/}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
             <CardTitle
               style={{
                 color: "#fff",
                 height: "176px",
-                background: "url(../src/fitforcellc.png) center /cover"
+                background:
+                  "url(http://www.webdevelopmenthelp.net/wp-content/uploads/2015/09/Advantages-of-HTML5-and-CSS3.png) center /cover"
               }}
             >
               FitForce Website
             </CardTitle>
-            <CardText>
-              Business website created with HTML, CSS and Materialize CSS
-              library.
-            </CardText>
+            <CardText>HTML, CSS and Materialize CSS website.</CardText>
             <CardActions border>
               <Button
                 href=" https://cynthiawilliamsa.github.io/fitforcellc/"
@@ -74,13 +69,13 @@ class Projects extends Component {
             <CardMenu style={{ color: "#eee" }} />
           </Card>
           {/* Project 3*/}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
             <CardTitle
               style={{
                 color: "#fff",
                 height: "176px",
                 background:
-                  "url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center /cover"
+                  "url(https://cdn-images-1.medium.com/max/1200/1*y6C4nSvy2Woe0m7bWEn4BA.png) center /cover"
               }}
             >
               Weather App
@@ -95,7 +90,6 @@ class Projects extends Component {
               </Button>
             </CardActions>
             <CardMenu style={{ color: "#eee" }}>
-              <IconButton name="share" />
             </CardMenu>
           </Card>
         </div>
@@ -104,14 +98,14 @@ class Projects extends Component {
       return (
         <div className="react-cards">
           {/* Project 1 */}
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
             <CardTitle
-              src={fitnessstats}
+
               style={{
                 color: "#fff",
                 height: "176px",
                 background:
-                  "url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center /cover"
+                  "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VxpMH7uAjyFM1BkcLs2JJ2xEbP6vNeM3mC55cMrziKTJjFqp) center /cover"
               }}
             >
               Fitness Stats App
@@ -127,20 +121,19 @@ class Projects extends Component {
             </CardActions>
             <CardMenu style={{ color: "#eee" }} />
           </Card>
-          <Card shadow={5} style={{ minWidth: "450", margin: "auto" }}>
+          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
             <CardTitle
               style={{
                 color: "#fff",
                 height: "176px",
                 background:
-                  "url(https://images.pexels.com/photos/270557/pexels-photo-270557.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) center /cover"
+                  "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VxpMH7uAjyFM1BkcLs2JJ2xEbP6vNeM3mC55cMrziKTJjFqp) center /cover"
               }}
             >
-              Basic Express Server Setup
+              Express Server Setup
             </CardTitle>
             <CardText>
-              React App utilizing Express, MongoDB, Mongoose and Material-UI.
-              Allows clients to input metrics and track progress.
+              React App using Express for server setup and MongoDB.
             </CardText>
             <CardActions border>
               <Button
@@ -150,8 +143,33 @@ class Projects extends Component {
                 GitHub
               </Button>
             </CardActions>
-            <CardMenu style={{ color: "#eee" }}>
-              <IconButton name="share" />
+            <CardMenu style={{ color: "#eee" }}>              
+            </CardMenu>
+          </Card>
+          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
+            <CardTitle
+              style={{
+                color: "#fff",
+                height: "176px",
+                background:
+                  "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-VxpMH7uAjyFM1BkcLs2JJ2xEbP6vNeM3mC55cMrziKTJjFqp) center /cover"
+              }}
+            >
+              Video Idea Tracker
+            </CardTitle>
+            <CardText>
+              React App utilizing Express, MongoDB, Mongoose and Material-UI.
+              Allows user to enter, edit, delete video ideas.
+            </CardText>
+            <CardActions border>
+              <Button
+                href="https://glacial-hamlet-81799.herokuapp.com/"
+                colored
+              >
+                Check it Out
+              </Button>
+            </CardActions>
+            <CardMenu style={{ color: "#eee" }}>             
             </CardMenu>
           </Card>
         </div>
