@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 import Cyn from "../../src/Cyn.jpg";
+import cwhead2 from '../../src/cwhead2.jpg';
 
 class Contact extends Component {
   render() {
@@ -9,7 +10,7 @@ class Contact extends Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Cynthia Williams</h2>
-            <img src={Cyn} alt="avatar" style={{ height: "250px" }} />
+            <img src={cwhead2} alt="avatar" style={{ maxWidth: "350px" }} />
             <p style={{ width: "75%", margin: "auto", paddingTop: "2em" }} />
           </Cell>
           <Cell col={6}>
