@@ -22,7 +22,7 @@ class Projects extends Component {
       return (
         <div className="react-cards" >
           {/* Projects */}
-          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
+          <Card shadow={5} style={{ margin: "auto", marginBottom: "8px" }}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -46,7 +46,7 @@ class Projects extends Component {
             </CardMenu>
           </Card>
           {/* Project 2*/}
-          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
+          <Card shadow={5} style={{ margin: "auto", marginBottom: "8px"}}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -69,7 +69,7 @@ class Projects extends Component {
             <CardMenu style={{ color: "#eee" }} />
           </Card>
           {/* Project 3*/}
-          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
+          <Card shadow={5} style={{margin: "auto", marginBottom: "8px"}}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -98,7 +98,7 @@ class Projects extends Component {
       return (
         <div className="react-cards">
           {/* Project 1 */}
-          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
+          <Card shadow={5} style={{margin: "auto", marginBottom: "8px"}}>
             <CardTitle
 
               style={{
@@ -111,8 +111,7 @@ class Projects extends Component {
               Fitness Stats App
             </CardTitle>
             <CardText>
-              React App hosted on Heroku. Express, Node.js, MongoDB(MLab),
-              Passport and Material UI.
+              React,Express, Node.js, MongoDB, Passport and Material UI.
             </CardText>
             <CardActions border>
               <Button href="https://ancient-brook-98081.herokuapp.com/" colored>
@@ -121,7 +120,7 @@ class Projects extends Component {
             </CardActions>
             <CardMenu style={{ color: "#eee" }} />
           </Card>
-          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
+          <Card shadow={5} style={{margin: "auto", marginBottom: "8px"}}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -146,7 +145,7 @@ class Projects extends Component {
             <CardMenu style={{ color: "#eee" }}>              
             </CardMenu>
           </Card>
-          <Card shadow={5} style={{ minWidth: "250", margin: "auto" }}>
+          <Card shadow={5} style={{margin: "auto", marginBottom: "8px"}}>
             <CardTitle
               style={{
                 color: "#fff",
@@ -158,8 +157,7 @@ class Projects extends Component {
               Video Idea Tracker
             </CardTitle>
             <CardText>
-              React App utilizing Express, MongoDB, Mongoose and Material-UI.
-              Allows user to enter, edit, delete video ideas.
+              React, Express, MongoDB, Mongoose and Material-UI.
             </CardText>
             <CardActions border>
               <Button
