@@ -83,10 +83,10 @@ class Projects extends Component {
             <CardText>React App utilizing API.</CardText>
             <CardActions border>
               <Button
-                href="https://github.com/cynthiawilliamsa/weatherapp"
+                href="https://sleepy-hamlet-12414.herokuapp.com/"
                 colored
               >
-                GitHub
+                Check it Out
               </Button>
             </CardActions>
             <CardMenu style={{ color: "#eee" }}>
