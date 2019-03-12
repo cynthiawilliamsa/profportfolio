@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
-import Cyn from "../../src/Cyn.jpg";
 import cwhead2 from '../../src/cwhead2.jpg';
 
 class Contact extends Component {

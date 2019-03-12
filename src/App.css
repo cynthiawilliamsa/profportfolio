@@ -88,6 +88,8 @@ body {
 /*Reach Out*/
 .headshot {
   width: 250px;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 .contact-body {
   margin: auto; 
@@ -107,13 +109,12 @@ body {
 }
 
 .contact-grid h2 {
-  font-family: "Anton", sans-serif;
+  font-weight: bold;
   font-size: 30px;
   letter-spacing: 2px;
 }
 
 .contact-grid p {
-  font-family: 'Oxygen', sans-serif;
   font-weight: bold;
   font-size: 18px;
 }
